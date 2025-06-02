@@ -1,0 +1,4 @@
+pip==25.1
+setuptools==78.1.1
+wheel==0.45.1
+z-rer==0.0.2
