@@ -11,20 +11,24 @@
 
 ## What is MCP?
 
-The **Model Context Protocol (MCP)** is an open standard that standardizes how applications provide context to large language models (LLMs). Think of MCP as the "USB-C port" for AI applications, offering a universal interface to connect AI models with various data sources and tools. This protocol facilitates seamless integration, allowing AI agents to access and interact with external applications like Blender, VS Code, and more ([docs.anthropic.com](https://docs.anthropic.com/en/docs/agents-and-tools/mcp?utm_source=chatgpt.com)).
+The **Model Context Protocol (MCP)** is an open standard that standardizes how applications provide context to large language models (LLMs). Think of MCP as the "USB-C port" for AI applications, offering a universal interface to connect AI models with various data sources and tools. This protocol allows AI agents to access and interact with external applications like Blender, VS Code, and more ([docs.anthropic.com](https://docs.anthropic.com/en/docs/agents-and-tools/mcp?utm_source=chatgpt.com)).
 
 ---
 
 ## Key Features
 
-* **Centralized Access to Verified MCP Tools**: Easily discover and utilize a wide array of MCP tools.
+* **Centralized Access to Verified MCP Tools**:
+  
+  * Easily discover, query, and call a wide array of verified MCP tools.
 
   ```python
   tool = apu.find("render scene")  # Search across all tools
   tool = apu.vscode.find("lint Python file")  # Search within VS Code tools
   ```
 
-* **Dynamic Toolbox Management**: Agents can enable or disable specific tools within their toolbox.
+* **Dynamic Toolbox Management**:
+  
+  * Developers can enable or disable specific tools within the agent's toolbox.
 
 * **Automated Setup and Configuration**:
 
@@ -36,19 +40,20 @@ The **Model Context Protocol (MCP)** is an open standard that standardizes how a
   apu.start("vscode", "blender")  # Initialize and configure tools
   ```
 
-* **Quick Agent Setup**: Streamlines agent development workflows by abstracting low-level setup details.
+* **Quick Agent Setup**:
+  * Streamlines agent development workflows by abstracting low-level setup details.
 
 ---
 
 ## Installation
 
-To install APU, use pip:
+To install APU, use pip (coming soon!):
 
 ```bash
 pip install apu
 ```
 
-Ensure that you have the necessary permissions to install applications and modify configurations on your system.
+Please make sure that you have the necessary permissions to install applications and modify configurations on your system.
 
 ---
 
@@ -91,9 +96,9 @@ This project is licensed under the [MIT License](LICENSE).
 ## Roadmap
 
 * [ ] Expand the library of verified MCP tools.
-* [ ] Enhance support for custom tool integration.
+* [ ] Support for custom tool integration.
 * [ ] Improve documentation and usage examples.
-* [ ] Develop a GUI for easier tool management.
+* [ ] Develop a CLI/GUI for easier tool management.
 
 ---
 
